@@ -1,0 +1,28 @@
+{
+  "name": "xsd-parser-plugin",
+  "version": "1.0.0",
+  "description": "Modular XML Schema (XSD) parser with plugin architecture.",
+  "main": "dist/index.js",
+  
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
+    "test": "node dist/test.js"
+  },
+  "author": "Ferdi Arrahman",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.11"
+  }
+}
