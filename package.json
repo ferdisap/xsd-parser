@@ -2,7 +2,6 @@
   "name": "xsd-parser",
   "version": "1.0.0",
   "description": "Modular XML Schema (XSD) parser with plugin architecture.",
-  
   "type": "commonjs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -13,16 +12,18 @@
       "require": "./dist/cjs/index.js"
     }
   },
-
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
-
   "scripts": {
     "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json",
     "test": "node dist/test.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "docs:md": "typedoc --plugin typedoc-plugin-markdown --out docs/markdown",
+    "docs:html": "typedoc --out docs/html",
+    "docs": "npm run docs:html && npm run docs:md"
   },
-
   "keywords": [
     "xsd",
     "xml",
@@ -31,10 +32,8 @@
     "plugin",
     "schema"
   ],
-
   "author": "Ferdi Arrahman",
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ferdisap/xsd-parser.git"
@@ -43,8 +42,9 @@
     "url": "https://github.com/ferdisap/xsd-parser/issues"
   },
   "homepage": "https://github.com/ferdisap/xsd-parser#readme",
-
   "devDependencies": {
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-markdown": "^4.9.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {

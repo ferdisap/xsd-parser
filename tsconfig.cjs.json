@@ -1,40 +1,15 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
     "outDir": "dist/cjs",
-    "rootDir": "src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    
     "forceConsistentCasingInFileNames": true,
     
     "declaration": true,
     "declarationDir": "dist/cjs",
     "emitDeclarationOnly": false,
   },
-  "include": ["src"]
+  "include": ["src"],
 }
-// {
-//   "compilerOptions": {
-//     "target": "ES2020",
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "lib": ["ES2020", "DOM"],
-//     "outDir": "dist",
-//     "rootDir": "src",
-
-//     // 🔑 ini yang penting:
-//     "declaration": true,
-//     "declarationDir": "dist",
-//     "emitDeclarationOnly": false,
-
-//     "esModuleInterop": true,
-//     "skipLibCheck": true,
-//     "strict": true,
-//     "resolveJsonModule": true,
-//     "allowSyntheticDefaultImports": true
-//   },
-//   "include": ["src"],
-//   "exclude": ["node_modules", "dist"]
-// }

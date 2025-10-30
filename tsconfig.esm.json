@@ -1,24 +1,17 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Node",
     "lib": ["ES2020", "DOM"],
 
     "outDir": "dist/esm",
-    "rootDir": "src",
 
-    // 🔑 ini yang penting:
     "declaration": true,
     "declarationDir": "dist/esm",
     "emitDeclarationOnly": false,
-
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "src/test.ts"],
 }

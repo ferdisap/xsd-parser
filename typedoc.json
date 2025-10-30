@@ -1,0 +1,16 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "xsd-parser",
+  "includeVersion": true,
+  "tsconfig": "tsconfig.esm.json",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "categorizeByGroup": true,
+  "readme": "README.md",
+  "sort": ["source-order", "alphabetical"],
+  "plugin": ["typedoc-plugin-markdown"],
+  "githubPages": false
+}
