@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Generate and Deploy Docs
+name: v1.0.0 - Generate and Deploy Docs
 
 on:
   # Runs on pushes targeting the default branch
