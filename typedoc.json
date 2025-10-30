@@ -11,6 +11,6 @@
   "categorizeByGroup": true,
   "readme": "README.md",
   "sort": ["source-order", "alphabetical"],
-  "plugin": ["typedoc-plugin-markdown"],
+  // "plugin": ["typedoc-plugin-markdown"],
   "githubPages": false
 }
