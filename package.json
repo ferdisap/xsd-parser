@@ -1,6 +1,6 @@
 {
   "name": "xsd-parser",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Modular XML Schema (XSD) parser with plugin architecture.",
   "type": "commonjs",
   "main": "./dist/cjs/index.js",

@@ -1,4 +1,4 @@
-**xsd-parser v1.0.0**
+**xsd-parser master**
 
 # 🧩 xsd-parser
 
