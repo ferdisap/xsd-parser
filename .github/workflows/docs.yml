@@ -3,7 +3,7 @@ name: Generate and Deploy Docs
 on:
   push:
     branches:
-      - main  # Ubah jika branch utamamu bukan 'main'
+      - master  # Ubah jika branch utamamu bukan 'master'
 
 permissions:
   contents: read
